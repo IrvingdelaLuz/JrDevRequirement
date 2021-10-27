@@ -19,7 +19,10 @@ btn.addEventListener('click', (evt) => {
         url: '/Home/Image',
     }).done((response) => {
         imageSaveSucces()
-        window.location.href = response
+        setTimeout(() => {
+            window.location.href = response
+        }, 2000)
+        
     }).fail(() => {
         imageSaveError()
     });
