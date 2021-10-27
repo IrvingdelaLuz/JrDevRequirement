@@ -12,9 +12,9 @@ namespace JrDevRequirement
     using System;
     using System.Collections.Generic;
     
-    public partial class ConvertedImages
+    public partial class Images
     {
-        public int Id { get; set; }
+        public int ID { get; set; }
         public string ImageName { get; set; }
         public string ImageText { get; set; }
         public System.DateTime DateConverted { get; set; }

@@ -1,0 +1,37 @@
+﻿
+@{
+    ViewBag.Title = "Image";
+}
+
+<div class="col-lg-12">
+    <h2>Image to text</h2>
+</div>
+<div class="col-lg-6">
+    <br />
+    <input type="file" id="image" onchange="getBaseUrl()"/>
+</div>
+<div class="col-lg-6 text-right">
+    <br />
+    <button class="btn btn-primary" id="btnConvert">Convert Image</button>
+</div>
+<div class="col-lg-12">
+    <br />
+    <table class="table table-bordered">
+        <tr>
+            <th>Image Name</th>
+            @*<th>Image Text</th>*@
+            <th>Date Converted</th>
+        </tr>
+        @foreach(var item in ViewBag.List)
+            {
+                <tr>
+                    <td>@item.ImageName</td>
+                    @*<td>@item.ImageText</td>*@
+                    <td>@item.DateConverted</td>
+                </tr>
+            }
+    </table>
+</div>
+<div class="col-lg-12 messageContainer"></div>
+
+<script type="text/javascript" src="~/Scripts/App/base64Converter.js"></script>

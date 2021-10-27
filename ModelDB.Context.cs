@@ -25,6 +25,6 @@ namespace JrDevRequirement
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<ConvertedImages> ConvertedImages { get; set; }
+        public virtual DbSet<Images> Images { get; set; }
     }
 }
