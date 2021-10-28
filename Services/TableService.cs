@@ -6,9 +6,9 @@ using JrDevRequirement.Models;
 
 namespace JrDevRequirement.Services
 {
-    public class TableService
+    public static class TableService
     {
-        public List<Images> getImageList()
+        public static List<Images> getImageList()
         {
             using (RequirementDBEntities db = new RequirementDBEntities())
             {

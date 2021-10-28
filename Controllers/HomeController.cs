@@ -33,8 +33,8 @@ namespace JrDevRequirement.Controllers
 
         public ActionResult Image()
         {
-            TableService service = new TableService();
-            List<Images> list = service.getImageList();
+            //TableService service = new TableService();
+            List<Images> list = TableService.getImageList();
             ViewBag.List = list;
             return View();
         }
@@ -44,8 +44,8 @@ namespace JrDevRequirement.Controllers
         {
             try
             {
-                ImageService service = new ImageService();
-                service.imageSave(img);
+                //ImageService service = new ImageService();
+                ImageService.imageSave(img);
             }catch (DbEntityValidationException ex)
             {
                 Debug.WriteLine("ERROR: " + ex.ToString() + ex.Message);

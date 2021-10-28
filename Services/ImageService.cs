@@ -6,9 +6,9 @@ using JrDevRequirement.Models;
 
 namespace JrDevRequirement.Services
 {
-    public class ImageService
+    public static class ImageService
     {
-        public void imageSave(imageConvert img)
+        public static void imageSave(imageConvert img)
         {
             using (RequirementDBEntities db = new RequirementDBEntities())
             {
